@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+
+    <div class="form-box">
+        <form>
+
+            <div class="form-group">
+                <label>Nombre <span>(obligatorio)</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Apellidos <span>(obligatorio)</span></label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Correo electrónico <span>(obligatorio)</span></label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Número de teléfono <span>(obligatorio)</span></label>
+                <input type="tel" placeholder="+34">
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué le sucede?</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Vía de respuesta preferida</label>
+                <select>
+                    <option>Seleccionar una opción</option>
+                    <option>Teléfono</option>
+                    <option>Email</option>
+                    <option>WhatsApp</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" required>
+                <label>He leído y he entendido la política de privacidad <span>(obligatorio)</span></label>
+            </div>
+
+            <p class="note">Nos pondremos en contacto lo antes posible con usted</p>
+
+            <button type="submit">Solicitar cita</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
