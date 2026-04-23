@@ -1,58 +1,87 @@
-body{
-    font-family: Arial, sans-serif;
-    background:#e9e9e9;
-    margin:0;
-    padding:40px;
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario{
+    background:#ffffff;
+    padding:100px 20px;
 }
 
-h1{
-    font-size:56px;
+.formulario .container{
+    display:block;
+    max-width:1200px;
+    margin:auto;
+}
+
+.formulario h2{
+    font-size:2.2rem;
+    text-align:center;
+    margin-bottom:15px;
     color:#111;
-    margin-bottom:30px;
+}
+
+.titulo-formulario{
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2b6cb0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.subtitle-formulario{
+  text-align:center;
+  color:#2b6cb0;
+  font-size:1.1rem;
+  font-weight:400;
+  margin-top:-5px;
+  margin-bottom:45px;
+  opacity:.85;
 }
 
 .form-box{
     background:#D2E8FE;
-    max-width:500px;
-    padding:35px;
+    max-width:850px;
+    margin:0 auto;
+    padding:45px;
+    border-radius:10px;
 }
 
 .form-group{
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
-label{
+.form-group label{
     display:block;
-    font-size:13px;
+    font-size:15px;
     color:#2b6cb0;
-    margin-bottom:6px;
+    margin-bottom:8px;
 }
 
-label span{
+.form-group label span{
     color:#777;
-    font-size:11px;
+    font-size:12px;
 }
 
-input,
-select,
-textarea{
+.form-group input,
+.form-group select,
+.form-group textarea{
     width:100%;
-    padding:10px;
+    padding:14px;
     border:1px solid #2b6cb0;
-    border-radius:2px;
-    font-size:14px;
-    box-sizing:border-box;
+    border-radius:4px;
+    font-size:15px;
 }
 
-textarea{
+.form-group textarea{
+    min-height:120px;
     resize:vertical;
-    min-height:70px;
 }
 
 .checkbox{
     display:flex;
     align-items:flex-start;
-    gap:8px;
+    gap:10px;
+    margin:20px 0;
 }
 
 .checkbox input{
@@ -67,35 +96,38 @@ textarea{
 
 .note{
     color:#2b6cb0;
-    font-size:13px;
-    margin:18px 0;
+    margin-bottom:25px;
 }
 
-button{
+.form-box button{
     background:#2b6cb0;
     color:#fff;
     border:none;
-    padding:12px 22px;
+    padding:14px 25px;
     border-radius:8px;
     cursor:pointer;
-    font-size:14px;
+    font-size:15px;
 }
 
-button:hover{
-    background:#2b6cb0;
+.form-box button:hover{
+    opacity:.9;
 }
 
-@media (max-width:600px){
+.footer{
+    margin-top:80px;
+}
 
-    body{
-        padding:20px;
-    }
+@media (max-width:768px){
 
-    h1{
-        font-size:40px;
+    .formulario{
+        padding:70px 20px;
     }
 
     .form-box{
         padding:25px;
+    }
+
+    .formulario h2{
+        font-size:32px;
     }
 }
