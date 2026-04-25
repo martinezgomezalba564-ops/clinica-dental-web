@@ -249,6 +249,91 @@ hr {
   color: #777;
 }
 
+/* =========================
+   PERSONAL
+========================= */
+.personal{
+  padding:100px 20px;
+}
+
+.container-personal{
+  max-width:1200px;
+  margin:auto;
+}
+
+.personal h2{
+  text-align:center;
+  color:#2b6cb0;
+  font-size:2.4rem;
+  margin-bottom:70px;
+}
+
+.equipo-layout{
+  position:relative;
+  min-height:800px;
+}
+
+.miembro{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  max-width:420px;
+}
+
+.miembro img{
+  width:140px;
+  height:140px;
+  object-fit:cover;
+  border-radius:12px;
+  border:3px solid #2b6cb0;
+}
+
+.info h3{
+  color:#2b6cb0;
+  margin-bottom:5px;
+}
+
+.info span{
+  display:block;
+  font-weight:600;
+  margin-bottom:8px;
+}
+
+.info p{
+  color:#666;
+  line-height:1.5;
+  font-size:14px;
+}
+
+/* POSICIONES */
+
+.top{
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.left-top{
+  top:220px;
+  left:0;
+}
+
+.right-top{
+  top:220px;
+  right:0;
+}
+
+.left-bottom{
+  top:500px;
+  left:0;
+}
+
+.right-bottom{
+  top:500px;
+  right:0;
+}
+
 
 /* =========================
    FOOTER
