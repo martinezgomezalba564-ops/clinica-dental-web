@@ -89,12 +89,14 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  gap: 90px;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
 }
-
 .nav-links {
   display: flex;
   gap: 50px;
+  flex: 1;
 }
 
 .nav a {
@@ -103,16 +105,39 @@ p {
   font-size: 16px;
 }
 
-.nav a:hover {
+.nav-links a:hover {
   color: #245a94;
 }
 
+/* CONTENEDOR BOTONES NAV */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BOTON SECUNDARIO (cancelar) */
+.btn-outline {
+  background: rgb(234, 234, 234);
+  color: rgb(26, 26, 26);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px; 
+  border: none; 
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #ddd;
+  color: rgb(26, 26, 26);
+}
 /* BOTON CTA */
 .btn {
   background: #2b6cb0;
   color: white !important;
   padding: 10px 25px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   margin-left: 100px;
 }
@@ -311,7 +336,7 @@ p {
   background: #2b6cb0;
   color: white !important;
   padding: 10px 25px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 15px;
 }
 
@@ -386,7 +411,7 @@ p {
   width: 40px;
   height: 40px;
   background: #eaeaea;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -449,7 +474,7 @@ p {
   background: #2b6cb0;
   color: white;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -458,7 +483,7 @@ p {
   background: #2b6cb0;
   color: white;
   padding: 10px 30px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
   flex: 1;
@@ -484,7 +509,7 @@ p {
   background: #eaeaea;
   color: #1a1a1a;
   padding: 10px 15px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
   transition: 0.2s;
@@ -499,7 +524,7 @@ p {
   background: #2b6cb0;
   color: white;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
   flex: 1;
@@ -554,7 +579,19 @@ p {
     font-size: 15px;
   }
 }
+@media (max-width: 768px) {
 
+  .nav-buttons {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* =========================
    FOOTER
 ========================= */

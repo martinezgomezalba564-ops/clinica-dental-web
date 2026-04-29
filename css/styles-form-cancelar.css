@@ -1,0 +1,28 @@
+#form-cancelacion {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#form-cancelacion input,
+#form-cancelacion textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#form-cancelacion button {
+  background: #2b6cb0;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#form-cancelacion button:hover {
+  background: #245a94;
+}

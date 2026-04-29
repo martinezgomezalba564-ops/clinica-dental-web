@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar cancelación de cita</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-form-cancelar.css">
+</head>
+<body>
+   <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Logo">
+        <span>ClínicaDental</span>
+      </div>
+
+      <!-- BOTON MENU RESPONSIVE -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <!-- NAVEGACION -->
+      <nav class="nav" id="nav">
+        <div class="nav-links">
+          <a href="../html/index.html">Inicio</a>
+          <a href="#">Libro</a>
+          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Contacto</a>
+        </div>
+
+        <!-- BOTON CTA -->
+        <div class="nav-buttons">
+          <a href="#" class="btn">Solicitar cita</a>
+          <a href="#" class="btn-outline">Cancelar cita</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  
+  <!-- FORMULARIO PARA CANCELAR CITA -->
+    <form id="form-cancelacion">
+    <h2>Solicitar cancelación de cita</h2>
+
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <input type="email" name="email" placeholder="Email" required>
+
+    <input type="date" name="fecha" required>
+    <input type="time" name="hora" required>
+
+    <textarea name="mensaje" placeholder="Motivo (opcional)"></textarea>
+
+    <button type="submit">Enviar solicitud</button>
+    </form>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- LOGO FOOTER -->
+      <div class="footer-column footer-logo-column">
+        <img src="../assets/images/logo.png" alt="Logo Clínica" class="footer-logo">
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="footer-column">
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 123-456-789</li>
+          <li>Email:</li>
+          <li>Dirección</li>
+        </ul>
+      </div>
+
+      <!-- MENU FOOTER -->
+      <div class="footer-column">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="../html/index.html">Inicio</a></li>
+          <li><a href="#">Libro</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- LEGAL -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Aviso legal</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      <p>© 2026. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT EXTERNO -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="../js/script-email.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
