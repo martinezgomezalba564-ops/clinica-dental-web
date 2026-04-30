@@ -1,28 +1,75 @@
-#form-cancelacion {
-  max-width: 500px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.form {
+  background: #d2e8fe;
+  padding: 10px 10px;
+}
+/* CONTENEDOR DEL FORM */
+.form-cancelacion {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-#form-cancelacion input,
-#form-cancelacion textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
+/* TITULO */
+.form-cancelacion h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* LABELS */
+.form-cancelacion label {
+  display: block;
+  margin-bottom: 15px;
   font-size: 14px;
+  color: #333;
 }
 
-#form-cancelacion button {
-  background: #2b6cb0;
-  color: white;
+/* INPUTS Y TEXTAREA */
+.form-cancelacion input,
+.form-cancelacion textarea {
+  width: 100%;
   padding: 12px;
+  margin-top: 5px;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  background: #f5f6fa;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
 }
 
-#form-cancelacion button:hover {
-  background: #245a94;
+/* EFECTO FOCUS */
+.form-cancelacion input:focus,
+.form-cancelacion textarea:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #40739e;
+}
+
+/* TEXTAREA */
+.form-cancelacion textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+/* BOTÓN */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #3b6ea5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* HOVER BOTÓN */
+.btn-submit:hover {
+  background: #2f5d8a;
 }

@@ -15,6 +15,10 @@ body {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 hr {
   border: none;
   height: 2px;

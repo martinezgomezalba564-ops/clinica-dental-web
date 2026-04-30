@@ -43,22 +43,47 @@
 
     </div>
   </header>
-  
-  <!-- FORMULARIO PARA CANCELAR CITA -->
-    <form id="form-cancelacion">
-    <h2>Solicitar cancelación de cita</h2>
+  <section class="form">
+ <form action="../php/send-cancelacion.php" method="POST" class="form-cancelacion" >
 
-    <input type="text" name="nombre" placeholder="Nombre completo" required>
-    <input type="tel" name="telefono" placeholder="Teléfono" required>
-    <input type="email" name="email" placeholder="Email" required>
+  <h2>Solicitar cancelación de cita</h2>
 
+  <label>
+    Nombre completo
+    <input type="text" name="nombre" required>
+  </label>
+
+  <label>
+    Teléfono
+    <input type="tel" name="telefono" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Fecha de la cita
     <input type="date" name="fecha" required>
+  </label>
+
+  <label>
+    Hora de la cita
     <input type="time" name="hora" required>
+  </label>
 
-    <textarea name="mensaje" placeholder="Motivo (opcional)"></textarea>
+  <label>
+    Motivo (opcional)
+    <textarea name="mensaje" placeholder="Escribe el motivo de la cancelación"></textarea>
+  </label>
 
-    <button type="submit">Enviar solicitud</button>
-    </form>
+  <button type="submit" class="btn-submit">
+    Enviar solicitud
+  </button>
+
+</form>
+</section>
 
    <!-- FOOTER -->
   <footer class="footer">
