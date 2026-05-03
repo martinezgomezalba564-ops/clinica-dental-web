@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.acordeon {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.acordeon-titulo {
+    width: 100%;
+    background: #D2E8FE;
+    color: #2b6cb0;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.acordeon-contenido {
+    display: none;
+    padding: 15px;
+    background: #f5f5f5;
+}

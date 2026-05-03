@@ -23,3 +23,15 @@ function mostrarTiendas(){
     tiendas.style.display = "block";
   }
 }
+
+//Acordeón de preguntas frecuentes
+const botones = document.querySelectorAll(".acordeon-titulo");
+
+botones.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const contenido = boton.nextElementSibling;
+
+        contenido.style.display =
+            contenido.style.display === "block" ? "none" : "block";
+    });
+});
