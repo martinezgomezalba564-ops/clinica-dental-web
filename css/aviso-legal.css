@@ -1,0 +1,48 @@
+.aviso-legal {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+/* CONTENEDOR GENERAL */
+.aviso-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TITULO A LA IZQUIERDA */
+.aviso-titulo h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+/* TEXTO EN COLUMNAS */
+.aviso-texto {
+  column-count: 3;
+  column-gap: 40px;
+}
+
+.aviso-texto p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+  break-inside: avoid;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .aviso-container {
+    grid-template-columns: 1fr;
+  }
+
+  .aviso-texto {
+    column-count: 1;
+  }
+
+  .aviso-titulo {
+    text-align: center;
+  }
+}
