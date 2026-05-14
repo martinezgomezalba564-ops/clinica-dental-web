@@ -78,6 +78,9 @@ p {
   align-items: center;
   gap: 10px;
   margin-right: 80px;
+  text-decoration: none;
+  color: #1a1a1a;
+  cursor: pointer;
 }
 
 .logo img {
@@ -88,6 +91,8 @@ p {
   font-weight: bold;
   font-size: 20px;
 }
+
+
 
 /* NAVEGACION */
 .nav {
@@ -366,8 +371,8 @@ p {
 }
 
 
-   CTA
-========================= */
+   
+/*========CTA================= */
 
 .cta {
   background: #d2e8fe;
