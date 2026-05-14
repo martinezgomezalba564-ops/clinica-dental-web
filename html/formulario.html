@@ -1,153 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
 
-    <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+          <span>ClínicaDental</span>
+        </a>
 
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-  <img src="../assets/images/logo.png" alt="Logo">
-  <span>ClínicaDental</span>
-</a>
+        <!-- BOTON MENU RESPONSIVE -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-      <!-- BOTON MENU RESPONSIVE -->
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
+        <!-- NAVEGACION -->
+        <nav class="nav" id="nav">
+          <div class="nav-links">
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/index.html#libro">Libro</a>
+            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
+            <a href="../html/index.html#contacto">Contacto</a>
+          </div>
+
+          <!-- BOTON CTA -->
+
+          <div class="nav-buttons">
+            <a href="../html/formulario.html" class="btn">Solicitar cita</a>
+            <a href="../html/formulario-cancelar.html" class="btn-outline"
+              >Cancelar cita</a
+            >
+          </div>
+        </nav>
       </div>
-
-      <!-- NAVEGACION -->
-      <nav class="nav" id="nav">
-        <div class="nav-links">
-          <a href="../html/index.html">Inicio</a>
-          <a href="../html/index.html#libro">Libro</a>
-          <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-          <a href="../html/index.html#contacto">Contacto</a>
-        </div>
-
-        <!-- BOTON CTA -->
-
-        <div class="nav-buttons">
-          <a href="../html/formulario.html" class="btn">Solicitar cita</a>
-          <a href="../html/formulario-cancelar.html" class="btn-outline">Cancelar cita</a>
-        </div>
-
-      </nav>
-
-    </div>
-  </header>
+    </header>
 
     <h2 class="titulo-formulario">Pide tu cita con nosotros</h2>
-    <p class="subtitle-formulario">Te responderemos lo antes posible para ayudarte.</p>
+    <p class="subtitle-formulario">
+      Te responderemos lo antes posible para ayudarte.
+    </p>
 
     <div class="form-box">
-        <form>
+      <form>
+        <div class="form-group">
+          <label>Nombre <span>(obligatorio)</span></label>
+          <input type="text" required />
+        </div>
 
-            <div class="form-group">
-                <label>Nombre <span>(obligatorio)</span></label>
-                <input type="text" required>
-            </div>
+        <div class="form-group">
+          <label>Apellidos <span>(obligatorio)</span></label>
+          <input type="text" required />
+        </div>
 
-            <div class="form-group">
-                <label>Apellidos <span>(obligatorio)</span></label>
-                <input type="text" required>
-            </div>
+        <div class="form-group">
+          <label>Correo electrónico <span>(obligatorio)</span></label>
+          <input type="email" required />
+        </div>
 
-            <div class="form-group">
-                <label>Correo electrónico <span>(obligatorio)</span></label>
-                <input type="email" required>
-            </div>
+        <div class="form-group">
+          <label>Número de teléfono <span>(obligatorio)</span></label>
+          <input type="tel" placeholder="+34" />
+        </div>
 
-            <div class="form-group">
-                <label>Número de teléfono <span>(obligatorio)</span></label>
-                <input type="tel" placeholder="+34">
-            </div>
+        <div class="form-group">
+          <label>¿Qué le sucede?</label>
+          <textarea></textarea>
+        </div>
 
-            <div class="form-group">
-                <label>¿Qué le sucede?</label>
-                <textarea></textarea>
-            </div>
+        <div class="form-group">
+          <label>Vía de respuesta preferida</label>
+          <select>
+            <option>Seleccionar una opción</option>
+            <option>Teléfono</option>
+            <option>Email</option>
+            <option>WhatsApp</option>
+          </select>
+        </div>
 
-            <div class="form-group">
-                <label>Vía de respuesta preferida</label>
-                <select>
-                    <option>Seleccionar una opción</option>
-                    <option>Teléfono</option>
-                    <option>Email</option>
-                    <option>WhatsApp</option>
-                </select>
-            </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" required />
+          <label
+            >He leído y he entendido la política de privacidad
+            <span>(obligatorio)</span></label
+          >
+        </div>
 
-            <div class="form-group checkbox">
-                <input type="checkbox" required>
-                <label>He leído y he entendido la política de privacidad <span>(obligatorio)</span></label>
-            </div>
+        <p class="note">Nos pondremos en contacto lo antes posible con usted</p>
 
-            <p class="note">Nos pondremos en contacto lo antes posible con usted</p>
-
-            <button type="submit">Solicitar cita</button>
-
-        </form>
+        <button type="submit">Solicitar cita</button>
+      </form>
     </div>
 
-     <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- LOGO FOOTER -->
+        <div class="footer-column footer-logo-column">
+          <img
+            src="../assets/images/logo.png"
+            alt="Logo Clínica"
+            class="footer-logo"
+          />
+        </div>
 
-      <!-- LOGO FOOTER -->
-      <div class="footer-column footer-logo-column">
-        <img src="assets/images/logo.png" alt="Logo Clínica" class="footer-logo">
+        <!-- CONTACTO -->
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Teléfono: 91 851 09 32</li>
+            <li>Correo electrónico:</li>
+            <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
+          </ul>
+        </div>
+
+        <!-- MENU FOOTER -->
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="../html/index.html">Inicio</a></li>
+            <li><a href="#libro">Libro</a></li>
+            <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- LEGAL -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li>
+              <a href="politicas-privacidad.html">Política de privacidad</a>
+            </li>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- CONTACTO -->
-      <div class="footer-column">
-        <h3>Contacto</h3>
-        <ul>
-          <li>Teléfono: 91 851 09 32</li>
-          <li>Email:</li>
-          <li>Dirección: calle pardo Santallana, 6 (local)</li>
-        </ul>
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>© 2026. Todos los derechos reservados.</p>
       </div>
-
-      <!-- MENU FOOTER -->
-      <div class="footer-column">
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Libro</a></li>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- LEGAL -->
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Aviso legal</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      <p>© 2026. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-
-</body>
-
+    </footer>
+  </body>
 </html>

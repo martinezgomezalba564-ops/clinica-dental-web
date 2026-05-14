@@ -1,159 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Dental</title>
 
-<head>
-  <!-- METADATOS -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Dental</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/preguntas.css" />
+  </head>
 
-  <!-- ESTILOS -->
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/preguntas.css">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+          <span>ClínicaDental</span>
+        </a>
 
-</head>
+        <!-- BOTON MENU RESPONSIVE -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-<body>
+        <!-- NAVEGACION -->
+        <nav class="nav" id="nav">
+          <div class="nav-links">
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/index.html#libro">Libro</a>
+            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
+            <a href="../html/index.html#contacto">Contacto</a>
+          </div>
 
-  <!-- HEADER -->
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
+          <!-- BOTON CTA -->
 
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-  <img src="../assets/images/logo.png" alt="Logo">
-  <span>ClínicaDental</span>
-</a>
-
-      <!-- BOTON MENU RESPONSIVE -->
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
+          <div class="nav-buttons">
+            <a href="../html/formulario.html" class="btn">Solicitar cita</a>
+            <a href="../html/formulario-cancelar.html" class="btn-outline"
+              >Cancelar cita</a
+            >
+          </div>
+        </nav>
       </div>
+    </header>
 
-      <!-- NAVEGACION -->
-      <nav class="nav" id="nav">
-        <div class="nav-links">
-          <a href="../html/index.html">Inicio</a>
-          <a href="../html/index.html#libro">Libro</a>
-          <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-          <a href="../html/index.html#contacto">Contacto</a>
+    <h1>Preguntas Frecuentes</h1>
+
+    <div class="acordeon">
+      <button class="acordeon-titulo">▼ Bruxismos</button>
+      <div class="acordeon-contenido">
+        <p>Completar información</p>
+      </div>
+    </div>
+
+    <div class="acordeon">
+      <button class="acordeon-titulo">▼ Patología periodontal</button>
+      <div class="acordeon-contenido">
+        <p>Completar información</p>
+      </div>
+    </div>
+
+    <div class="acordeon">
+      <button class="acordeon-titulo">
+        ▼ Patología de tercer molar (muelas del juicio)
+      </button>
+      <div class="acordeon-contenido">
+        <p>
+          Una de las principales situaciones que requiere cirugía son las
+          retenciones o inclusiones <strong>dentarias</strong>.
+        </p>
+        <p>
+          Consiste en la permanecia de dientesdentro del hueso, imposivilitados
+          de erupcionar, lo que implica un riesgo, generalmente bajo,
+        </p>
+        <p>de que se desarrollen infecciones, quistes o tumores.</p>
+        <br />
+        <p>
+          El diente que con mayor frecuencia muestra retención es el
+          <strong>cordal,</strong> sobre todo el
+          <strong>inferior.</strong> Antes de erupcionar dicho cordal, suele
+        </p>
+        <p>
+          producirse una <strong>inflamación</strong> de la mucosa que lo cubre,
+          llamada <strong>pericoronaritis.</strong> Puede ir acompañada de
+          <strong>trismo</strong> (dificultad para
+        </p>
+        <p>
+          abrir la boca). Siempre que el cordal se encuentre
+          <strong>incluido</strong> o en <strong>mala posición, </strong>y
+          ocasione <strong>sintomas,</strong> se recomienda su
+          <strong>extracción,</strong>
+        </p>
+        <p>
+          así como -según algunos profesionales- por motivos
+          <strong>preventivos.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="acordeon">
+      <button class="acordeon-titulo">▼ Pulpitis</button>
+      <div class="acordeon-contenido">
+        <p>
+          La pulpa contiene las terminaciones nerviosas que determinan la
+          aparición de dolor en el diente.
+        </p>
+        <p>
+          Si una caries no es tratada seguirá avanzando hasta llegar a este
+          tejido, siendo necesario entonces un
+          <strong>tratamiento endodontico.</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="acordeon">
+      <button class="acordeon-titulo">▼ Traumatismo</button>
+      <div class="acordeon-contenido">
+        <p>
+          Constituyen el segundo motivo de atención dental en niños y
+          adolescentes y una de las causas principales de urgencias en la
+          consulta dental.
+        </p>
+        <p>
+          Las principales causas suelen ser los accidentes escolares, accidentes
+          deportivos y accidentes de tráfico.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- LOGO FOOTER -->
+        <div class="footer-column footer-logo-column">
+          <img
+            src="../assets/images/logo.png"
+            alt="Logo Clínica"
+            class="footer-logo"
+          />
         </div>
 
-        <!-- BOTON CTA -->
-
-        <div class="nav-buttons">
-          <a href="../html/formulario.html" class="btn">Solicitar cita</a>
-          <a href="../html/formulario-cancelar.html" class="btn-outline">Cancelar cita</a>
+        <!-- CONTACTO -->
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Teléfono: 91 851 09 32</li>
+            <li>Correo electrónico:</li>
+            <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
+          </ul>
         </div>
 
-      </nav>
+        <!-- MENU FOOTER -->
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="../html/index.html">Inicio</a></li>
+            <li><a href="#libro">Libro</a></li>
+            <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
 
-    </div>
-  </header>
-
-
-  <h1>Preguntas Frecuentes</h1>
-
-  <div class="acordeon">
-    <button class="acordeon-titulo">▼ Bruxismos</button>
-    <div class="acordeon-contenido">
-      <p>Completar información</p>
-    </div>
-  </div>
-
-  <div class="acordeon">
-    <button class="acordeon-titulo">▼ Patología periodontal</button>
-    <div class="acordeon-contenido">
-      <p>Completar información</p>
-    </div>
-  </div>
-  
-  <div class="acordeon">
-    <button class="acordeon-titulo">▼ Patología de tercer molar (muelas del juicio)</button>
-    <div class="acordeon-contenido">
-      <p>Una de las principales situaciones que requiere cirugía son las retenciones o inclusiones <strong>dentarias</strong>.</p>
-      <p>Consiste en la permanecia de dientesdentro del hueso, imposivilitados de erupcionar, lo que implica un riesgo, generalmente bajo, </p>
-      <p> de que se desarrollen infecciones, quistes o tumores.</p>
-      <br>
-      <p>El diente que con mayor frecuencia muestra retención es el <strong>cordal,</strong> sobre todo el <strong>inferior.</strong> Antes de erupcionar dicho cordal, suele</p>
-      <p>producirse una <strong>inflamación</strong> de la mucosa que lo cubre, llamada <strong>pericoronaritis.</strong> Puede ir acompañada de <strong>trismo</strong> (dificultad para</p>
-      <p> abrir la boca). Siempre que el cordal se encuentre <strong>incluido</strong> o en <strong>mala posición, </strong>y ocasione <strong>sintomas,</strong> se recomienda su <strong>extracción,</strong></p>
-      <p> así como -según algunos profesionales- por motivos <strong>preventivos.</strong></p>
-    </div>
-  </div>
-
-  <div class="acordeon">
-    <button class="acordeon-titulo">▼ Pulpitis </button>
-    <div class="acordeon-contenido">
-      <p>La pulpa contiene las terminaciones nerviosas que determinan la aparición de dolor en el diente.</p>
-      <p>Si una caries no es tratada seguirá avanzando hasta llegar a este tejido, siendo necesario entonces un <strong>tratamiento endodontico.</strong></p>
-    </div>
-  </div>
-
-  <div class="acordeon">
-    <button class="acordeon-titulo">▼ Traumatismo</button>
-    <div class="acordeon-contenido">
-      <p>Constituyen el segundo motivo de atención dental en niños y adolescentes y una de las causas principales de urgencias en la consulta dental.</p>
-      <p>Las principales causas suelen ser los accidentes escolares, accidentes deportivos y accidentes de tráfico.</p>
-      
-    </div>
-  </div>
-
-  
-
-  
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-
-      <!-- LOGO FOOTER -->
-      <div class="footer-column footer-logo-column">
-        <img src="../assets/images/logo.png" alt="Logo Clínica" class="footer-logo">
+        <!-- LEGAL -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li>
+              <a href="politicas-privacidad.html">Política de privacidad</a>
+            </li>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- CONTACTO -->
-      <div class="footer-column">
-        <h3>Contacto</h3>
-        <ul>
-          <li>Teléfono: 91 851 09 32</li>
-          <li>Email:</li>
-          <li>Dirección: calle pardo Santallana, 6 (local)</li>
-        </ul>
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>© 2026. Todos los derechos reservados.</p>
       </div>
+    </footer>
 
-      <!-- MENU FOOTER -->
-      <div class="footer-column">
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Libro</a></li>
-          <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-          <li><a href="formulario.html">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- LEGAL -->
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Aviso legal</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      <p>© 2026. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- SCRIPT EXTERNO -->
-  <script src="../js/script.js"></script>
-
-</body>
-
+    <!-- SCRIPT EXTERNO -->
+    <script src="../js/script.js"></script>
+  </body>
 </html>

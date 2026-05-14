@@ -1,144 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitar cancelación de cita</title>
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles-form-cancelar.css">
-</head>
-<body>
-   <!-- HEADER -->
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles-form-cancelar.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+          <span>ClínicaDental</span>
+        </a>
 
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
-  <img src="../assets/images/logo.png" alt="Logo">
-  <span>ClínicaDental</span>
-</a>
+        <!-- BOTON MENU RESPONSIVE -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-      <!-- BOTON MENU RESPONSIVE -->
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
+        <!-- NAVEGACION -->
+        <nav class="nav" id="nav">
+          <div class="nav-links">
+            <a href="../html/index.html">Inicio</a>
+            <a href="../html/index.html#libro">Libro</a>
+            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
+            <a href="../html/index.html#contacto">Contacto</a>
+          </div>
+
+          <!-- BOTON CTA -->
+
+          <div class="nav-buttons">
+            <a href="../html/formulario.html" class="btn">Solicitar cita</a>
+            <a href="../html/formulario-cancelar.html" class="btn-outline"
+              >Cancelar cita</a
+            >
+          </div>
+        </nav>
       </div>
+    </header>
 
-      <!-- NAVEGACION -->
-      <nav class="nav" id="nav">
-        <div class="nav-links">
-          <a href="../html/index.html">Inicio</a>
-          <a href="../html/index.html#libro">Libro</a>
-          <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-          <a href="../html/index.html#contacto">Contacto</a>
+    <section class="form">
+      <form
+        action="../php/send-cancelacion.php"
+        method="POST"
+        class="form-cancelacion"
+      >
+        <h2>Solicitar cancelación de cita</h2>
+
+        <label>
+          Nombre completo
+          <input type="text" name="nombre" required />
+        </label>
+
+        <label>
+          Teléfono
+          <input type="tel" name="telefono" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Fecha de la cita
+          <input type="date" name="fecha" required />
+        </label>
+
+        <label>
+          Hora de la cita
+          <input type="time" name="hora" required />
+        </label>
+
+        <label>
+          Motivo (opcional)
+          <textarea
+            name="mensaje"
+            placeholder="Escribe el motivo de la cancelación"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="btn-submit">Enviar solicitud</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- LOGO FOOTER -->
+        <div class="footer-column footer-logo-column">
+          <img
+            src="../assets/images/logo.png"
+            alt="Logo Clínica"
+            class="footer-logo"
+          />
         </div>
 
-        <!-- BOTON CTA -->
-
-        <div class="nav-buttons">
-          <a href="../html/formulario.html" class="btn">Solicitar cita</a>
-          <a href="../html/formulario-cancelar.html" class="btn-outline">Cancelar cita</a>
+        <!-- CONTACTO -->
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Teléfono: 91 851 09 32</li>
+            <li>Correo electrónico:</li>
+            <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
+          </ul>
         </div>
 
-      </nav>
+        <!-- MENU FOOTER -->
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="../html/index.html">Inicio</a></li>
+            <li><a href="#libro">Libro</a></li>
+            <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
 
-    </div>
-  </header>
-
-  <section class="form">
- <form action="../php/send-cancelacion.php" method="POST" class="form-cancelacion" >
-
-  <h2>Solicitar cancelación de cita</h2>
-
-  <label>
-    Nombre completo
-    <input type="text" name="nombre" required>
-  </label>
-
-  <label>
-    Teléfono
-    <input type="tel" name="telefono" required>
-  </label>
-
-  <label>
-    Email
-    <input type="email" name="email" required>
-  </label>
-
-  <label>
-    Fecha de la cita
-    <input type="date" name="fecha" required>
-  </label>
-
-  <label>
-    Hora de la cita
-    <input type="time" name="hora" required>
-  </label>
-
-  <label>
-    Motivo (opcional)
-    <textarea name="mensaje" placeholder="Escribe el motivo de la cancelación"></textarea>
-  </label>
-
-  <button type="submit" class="btn-submit">
-    Enviar solicitud
-  </button>
-
-</form>
-</section>
-
-   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-
-      <!-- LOGO FOOTER -->
-      <div class="footer-column footer-logo-column">
-        <img src="../assets/images/logo.png" alt="Logo Clínica" class="footer-logo">
+        <!-- LEGAL -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li>
+              <a href="politicas-privacidad.html">Política de privacidad</a>
+            </li>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- CONTACTO -->
-      <div class="footer-column">
-        <h3>Contacto</h3>
-        <ul>
-          <li>Teléfono: 123-456-789</li>
-          <li>Email:</li>
-          <li>Dirección</li>
-        </ul>
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>© 2026. Todos los derechos reservados.</p>
       </div>
+    </footer>
 
-      <!-- MENU FOOTER -->
-      <div class="footer-column">
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="../html/index.html">Inicio</a></li>
-          <li><a href="#">Libro</a></li>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-
-      <!-- LEGAL -->
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Aviso legal</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="footer-bottom">
-      <p>© 2026. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- SCRIPT EXTERNO -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- SCRIPT EXTERNO -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="../js/script-email.js"></script>
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>

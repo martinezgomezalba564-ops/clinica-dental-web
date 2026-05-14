@@ -707,7 +707,7 @@ p {
 
 .footer-column a {
   color: #2B6CB0;
-  text-decoration: underline;
+  text-decoration: none;
   transition: 0.3s;
 }
 
