@@ -14,6 +14,26 @@
   margin-bottom: 70px;
 }
 
+.equipo {
+  padding: 80px 20px; /* mismo estilo que tratamientos */
+  text-align: center;
+}
+
+.equipo h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.equipo .container {
+  display: block;
+  text-align: center;
+}
+
+.equipo-layout {
+  margin-top: 50px;
+}
+
 /* Grid general */
 .equipo-layout {
   display: grid;

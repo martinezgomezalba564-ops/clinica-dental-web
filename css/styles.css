@@ -412,7 +412,7 @@ p {
 /* LIBRO */
 
 .libro{
-  padding:100px 20px;
+  padding:80px 20px;
   background:#fff;
 }
 
@@ -421,6 +421,7 @@ p {
   grid-template-columns: 1fr 1fr;
   gap:60px;
   align-items:center;
+  margin-top: 50px;
 }
 
 .libro-img img{
@@ -432,9 +433,10 @@ p {
 }
 
 .libro-texto h2{
-  font-size:2.3rem;
-  color:#2b6cb0;
-  margin-bottom:20px;
+  font-size: 2.2rem;
+  color: #1a1a1a; /* negro */
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .libro-texto p{
