@@ -10,38 +10,41 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <!-- LOGO -->
-        <a href="index.html" class="logo">
-          <img src="../assets/images/logo.png" alt="Logo" />
-          <span>ClínicaDental</span>
-        </a>
+   <!-- HEADER -->
+  <header class="header">
+    <div class="container">
 
-        <!-- BOTON MENU RESPONSIVE -->
-        <div class="menu-toggle" id="menu-toggle">☰</div>
+      <!-- LOGO -->
+      <a href="index.html" class="logo">
+  <img src="../assets/images/logo.png" alt="Logo">
+  <span>Dra.Pajares</span>
+</a>
 
-        <!-- NAVEGACION -->
-        <nav class="nav" id="nav">
-          <div class="nav-links">
-            <a href="../html/index.html">Inicio</a>
-            <a href="../html/index.html#libro">Libro</a>
-            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
-            <a href="../html/index.html#contacto">Contacto</a>
-          </div>
-
-          <!-- BOTON CTA -->
-
-          <div class="nav-buttons">
-            <a href="../html/formulario.html" class="btn">Solicitar cita</a>
-            <a href="../html/formulario-cancelar.html" class="btn-outline"
-              >Cancelar cita</a
-            >
-          </div>
-        </nav>
+      <!-- BOTON MENU RESPONSIVE -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
       </div>
-    </header>
+
+      <!-- NAVEGACION -->
+      <nav class="nav" id="nav">
+        <div class="nav-links">
+          <a href="../html/index.html">Inicio</a>
+          <a href="../html/index.html#libro">Libro</a>
+          <a href="../html/preguntas.html">Preguntas Frecuentes</a>
+          <a href="../html/index.html#contacto">Contacto</a>
+        </div>
+
+        <!-- BOTON CTA -->
+
+        <div class="nav-buttons">
+          <a href="../html/formulario.html" class="btn">Solicitar cita</a>
+          <a href="../html/formulario-cancelar.html" class="btn-outline">Cancelar cita</a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
 
     <h2 class="titulo-formulario">Pide tu cita con nosotros</h2>
     <p class="subtitle-formulario">
@@ -99,56 +102,70 @@
       </form>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- LOGO FOOTER -->
-        <div class="footer-column footer-logo-column">
-          <img
-            src="../assets/images/logo.png"
-            alt="Logo Clínica"
-            class="footer-logo"
-          />
-        </div>
 
-        <!-- CONTACTO -->
-        <div class="footer-column">
-          <h3>Contacto</h3>
-          <ul>
-            <li>Teléfono: 91 851 09 32</li>
-            <li>Correo electrónico:</li>
-            <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
-          </ul>
-        </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
 
-        <!-- MENU FOOTER -->
-        <div class="footer-column">
-          <h3>Menu</h3>
-          <ul>
-            <li><a href="../html/index.html">Inicio</a></li>
-            <li><a href="#libro">Libro</a></li>
-            <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-
-        <!-- LEGAL -->
-        <div class="footer-column">
-          <h3>Legal</h3>
-          <ul>
-            <li>
-              <a href="politicas-privacidad.html">Política de privacidad</a>
-            </li>
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-          </ul>
-        </div>
+      <!-- LOGO FOOTER -->
+      <div class="footer-column footer-logo-column">
+        <img src="../assets/images/logo.png" alt="Logo Clínica" class="footer-logo">
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="footer-bottom">
-        <p>© 2026. Todos los derechos reservados.</p>
+      <!-- CONTACTO -->
+      <div class="footer-column">
+        <h3>Contacto</h3>
+        <ul>
+          <li>Teléfono: 91 851 09 32</li>
+          <li>Correo electrónico: ypaneva@gmail.com</li>
+          <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+
+      <!-- MENU FOOTER -->
+      <div class="footer-column">
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="../html/index.html">Inicio</a></li>
+          <li><a href="../html/index.html#libro">Libro</a></li>
+          <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
+          <li><a href="../html/index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- LEGAL -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="politicas-privacidad.html">Política de privacidad</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+      <p>© 2026. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Utilizamos cookies para mejorar tu experiencia.
+      <a href="../html/cookies.html">Más información</a>
+    </p>
+
+    <div class="cookie-buttons">
+      <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT EXTERNO -->
+  <script src="../js/script.js"></script>
+  <script src="../js/script-cookies.js"></script>
+
+</body>
+
 </html>

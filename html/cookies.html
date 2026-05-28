@@ -13,23 +13,28 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container">
-        <div class="logo">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
           <img src="../assets/images/logo.png" alt="Logo" />
-          <span>ClínicaDental</span>
-        </div>
+          <span>Dra.Pajares</span>
+        </a>
 
+        <!-- BOTON MENU RESPONSIVE -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
 
+        <!-- NAVEGACION -->
         <nav class="nav" id="nav">
           <div class="nav-links">
             <a href="../html/index.html">Inicio</a>
-            <a href="#">Libro</a>
-            <a href="#">Preguntas Frecuentes</a>
-            <a href="#contacto">Contacto</a>
+            <a href="../html/index.html#libro">Libro</a>
+            <a href="../html/preguntas.html">Preguntas Frecuentes</a>
+            <a href="../html/index.html#contacto">Contacto</a>
           </div>
 
+          <!-- BOTON CTA -->
+
           <div class="nav-buttons">
-            <a href="#" class="btn">Solicitar cita</a>
+            <a href="../html/formulario.html" class="btn">Solicitar cita</a>
             <a href="../html/formulario-cancelar.html" class="btn-outline"
               >Cancelar cita</a
             >
@@ -94,19 +99,19 @@
           <h3>Contacto</h3>
           <ul>
             <li>Teléfono: 91 851 09 32</li>
-            <li>Correo electrónico:</li>
+            <li>Correo electrónico: ypaneva@gmail.com</li>
             <li>Dirección: Calle Pardo Santallana, 6 (local)</li>
           </ul>
         </div>
 
         <!-- MENU FOOTER -->
         <div class="footer-column">
-          <h3>Menu</h3>
+          <h3>Menú</h3>
           <ul>
             <li><a href="../html/index.html">Inicio</a></li>
-            <li><a href="#libro">Libro</a></li>
+            <li><a href="../html/index.html#libro">Libro</a></li>
             <li><a href="../html/preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="../html/index.html#contacto">Contacto</a></li>
           </ul>
         </div>
 
@@ -129,6 +134,19 @@
       </div>
     </footer>
 
+    <div id="cookie-banner" class="cookie-banner">
+      <p>
+        Utilizamos cookies para mejorar tu experiencia.
+        <a href="../html/cookies.html">Más información</a>
+      </p>
+
+      <div class="cookie-buttons">
+        <button onclick="aceptarCookies()">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- SCRIPT EXTERNO -->
     <script src="../js/script.js"></script>
+    <script src="../js/script-cookies.js"></script>
   </body>
 </html>
