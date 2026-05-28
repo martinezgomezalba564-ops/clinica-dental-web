@@ -16,12 +16,14 @@ window.addEventListener("scroll", () => {
 /** BOTON PARA MOSTAR LOS ENLACES DEL LIBRO */
 function mostrarTiendas(){
   const tiendas = document.getElementById("tiendas-libro");
+  const boton = document.getElementById("btn-ver-mas");
 
-  if(tiendas.style.display === "block"){
-    tiendas.style.display = "none";
-  }else{
-    tiendas.style.display = "block";
-  }
+ // Mostrar enlaces
+  tiendas.style.display = "flex";
+
+  // Ocultar botón
+  boton.style.display = "none";
+
 }
 
 //Acordeón de preguntas frecuentes

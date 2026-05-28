@@ -456,6 +456,8 @@ p {
 .tiendas{
   margin-top:20px;
   display:none;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .tiendas a{
@@ -463,6 +465,8 @@ p {
   color:#2b6cb0;
   margin-bottom:10px;
   text-decoration:none;
+   padding-left: 10px;
+  position: relative;
 }
 
 .tiendas a:hover{
