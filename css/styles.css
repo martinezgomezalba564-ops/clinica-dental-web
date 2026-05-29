@@ -183,7 +183,7 @@ p {
 
 .logo img {
   border-radius: 50%;
-  width: 60px;
+  width: 80px;
 }
 
 .logo span {
@@ -321,13 +321,30 @@ p {
 
 /* ANIMACION CARRUSEL */
 @keyframes slide {
-  0% { transform: translateX(0%); }
-  30% { transform: translateX(0%); }
-  33% { transform: translateX(-100%); }
-  63% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  96% { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
+
+  0%, 18% {
+    transform: translateX(0%);
+  }
+
+  20%, 38% {
+    transform: translateX(-100%);
+  }
+
+  40%, 58% {
+    transform: translateX(-200%);
+  }
+
+  60%, 78% {
+    transform: translateX(-300%);
+  }
+
+  80%, 98% {
+    transform: translateX(-400%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 
