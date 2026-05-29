@@ -15,7 +15,7 @@
       <div class="container">
         <!-- LOGO -->
         <a href="index.html" class="logo">
-          <img src="../assets/images/logo.png" alt="Logo" />
+          <img src="../assets/images/logo-prueba.png" alt="Logo" />
           <span>Dra.Pajares</span>
         </a>
 
@@ -42,42 +42,43 @@
         </nav>
       </div>
     </header>
-
+    
     <section class="form">
+      <h2>Solicitar cancelación de cita</h2>
       <form
         action="../php/send-cancelacion.php"
         method="POST"
         class="form-cancelacion"
       >
-        <h2>Solicitar cancelación de cita</h2>
+        
 
         <label>
-          Nombre completo
+          Nombre completo <span>(obligatorio)</span>
           <input type="text" name="nombre" required />
         </label>
 
         <label>
-          Teléfono
-          <input type="tel" name="telefono" required />
+          Número de teléfono <span>(obligatorio)</span>
+          <input type="tel" name="telefono" placeholder="+34" required />
         </label>
 
         <label>
-          Email
+          Correo electrónico <span>(obligatorio)</span>
           <input type="email" name="email" required />
         </label>
 
         <label>
-          Fecha de la cita
+          Fecha de la cita <span>(obligatorio)</span>
           <input type="date" name="fecha" required />
         </label>
 
         <label>
-          Hora de la cita
+          Hora de la cita <span>(obligatorio)</span>
           <input type="time" name="hora" required />
         </label>
 
         <label>
-          Motivo (opcional)
+          Motivo <span>(opcional)</span>
           <textarea
             name="mensaje"
             placeholder="Escribe el motivo de la cancelación"
@@ -94,7 +95,7 @@
         <!-- LOGO FOOTER -->
         <div class="footer-column footer-logo-column">
           <img
-            src="../assets/images/logo.png"
+            src="../assets/images/logo-prueba.png"
             alt="Logo Clínica"
             class="footer-logo"
           />
