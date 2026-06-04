@@ -321,25 +321,28 @@ p {
 
 /* ANIMACION CARRUSEL */
 @keyframes slide {
-
-  0%, 18% {
+  0%, 14% {
     transform: translateX(0%);
   }
 
-  20%, 38% {
+  16%, 30% {
     transform: translateX(-100%);
   }
 
-  40%, 58% {
+  32%, 46% {
     transform: translateX(-200%);
   }
 
-  60%, 78% {
+  48%, 62% {
     transform: translateX(-300%);
   }
 
-  80%, 98% {
+  64%, 78% {
     transform: translateX(-400%);
+  }
+
+  80%, 94% {
+    transform: translateX(-500%);
   }
 
   100% {
