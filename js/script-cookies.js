@@ -8,3 +8,8 @@ window.onload = function () {
     document.getElementById("cookie-banner").style.display = "none";
   }
 };
+
+function rechazarCookies() {
+    localStorage.setItem("cookiesAccepted", "false");
+    document.getElementById("cookie-banner").style.display = "none";
+}
