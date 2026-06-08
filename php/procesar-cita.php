@@ -10,18 +10,19 @@ function limpiar($dato) {
     return trim(strip_tags($dato));
 }
 
+// EVITAR INYECCIÓN EN CABECERAS
 function limpiarCabecera($valor) {
     return str_replace(["\r", "\n"], '', $valor);
 }
 
 // DATOS DEL FORMULARIO
-$nombre          = limpiar($_POST["nombre"] ?? '');
-$apellidos       = limpiar($_POST["apellidos"] ?? '');
-$telefono        = limpiar($_POST["telefono"] ?? '');
-$email           = filter_var($_POST["email"] ?? '', FILTER_VALIDATE_EMAIL);
-$mensaje         = limpiar($_POST["mensaje"] ?? '');
-$via_respuesta   = limpiar($_POST["via_respuesta"] ?? '');
-$privacidad      = $_POST["privacidad"] ?? '';
+$nombre        = limpiar($_POST["nombre"] ?? '');
+$apellidos     = limpiar($_POST["apellidos"] ?? '');
+$telefono      = limpiar($_POST["telefono"] ?? '');
+$email         = filter_var($_POST["email"] ?? '', FILTER_VALIDATE_EMAIL);
+$mensaje       = limpiar($_POST["mensaje"] ?? '');
+$viaRespuesta  = limpiar($_POST["via_respuesta"] ?? '');
+$privacidad    = $_POST["privacidad"] ?? '';
 
 // VALIDACIÓN
 if (
@@ -32,42 +33,44 @@ if (
     !$privacidad
 ) {
     http_response_code(400);
-    exit("Faltan datos obligatorios o email inválido.");
+    exit("Faltan datos obligatorios o el email no es válido.");
 }
 
 // SEGURIDAD EMAIL
 $email = limpiarCabecera($email);
 
-// DESTINO
-$destino = "clinica@tu-dominio.com";
+// CORREO DE DESTINO
+$destino = "ypaneva@gmail.com";
 
 // ASUNTO
-$asunto = "Nueva solicitud de cita";
+$asunto = "WEB. Nueva solicitud de cita - Clínica Dra. Pajares";
 
 // CONTENIDO DEL EMAIL
-$contenido = "Nueva solicitud de cita\n\n";
-
+$contenido = "Se ha recibido una nueva solicitud de cita.\n\n";
 $contenido .= "Nombre: $nombre\n";
 $contenido .= "Apellidos: $apellidos\n";
 $contenido .= "Teléfono: $telefono\n";
 $contenido .= "Email: $email\n";
-$contenido .= "Vía de respuesta preferida: $via_respuesta\n";
-$contenido .= "Mensaje:\n$mensaje\n";
+$contenido .= "Vía de respuesta preferida: $viaRespuesta\n";
+$contenido .= "Mensaje:\n";
+
+if (!empty($mensaje)) {
+    $contenido .= "$mensaje\n";
+} else {
+    $contenido .= "No especificado.\n";
+}
 
 // CABECERAS
-$cabeceras  = "From: no-reply@tu-dominio.com\r\n";
+$cabeceras  = "From: no-reply@clinicadrapajares.com\r\n";
 $cabeceras .= "Reply-To: $email\r\n";
 $cabeceras .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-// ENVIAR EMAIL
-$enviado = mail($destino, $asunto, $contenido, $cabeceras);
-
-// RESPUESTA
-if ($enviado) {
+// ENVÍO
+if (mail($destino, $asunto, $contenido, $cabeceras)) {
     echo "Solicitud enviada correctamente.";
 } else {
     http_response_code(500);
     echo "Error al enviar la solicitud.";
 }
-?>
 
+?>
