@@ -5,15 +5,17 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit("Método no permitido.");
 }
 
+// Limpiar datos
 function limpiar($dato) {
     return trim(strip_tags($dato));
 }
 
+// Evitar inyección en cabeceras
 function limpiarCabecera($valor) {
     return str_replace(["\r", "\n"], '', $valor);
 }
 
-// DATOS
+// DATOS DEL FORMULARIO
 $nombre   = limpiar($_POST["nombre"] ?? '');
 $telefono = limpiar($_POST["telefono"] ?? '');
 $email    = filter_var($_POST["email"] ?? '', FILTER_VALIDATE_EMAIL);
@@ -24,37 +26,34 @@ $mensaje  = limpiar($_POST["mensaje"] ?? '');
 // VALIDACIÓN
 if (!$nombre || !$telefono || !$email || !$fecha || !$hora) {
     http_response_code(400);
-    exit("Faltan datos obligatorios o email inválido.");
+    exit("Faltan datos obligatorios o el email no es válido.");
 }
 
 $email = limpiarCabecera($email);
 
-// DESTINO
-$destino = "clinica@tu-dominio.com";
+// CORREO DE LA CLÍNICA
+$destino = "ypaneva@gmail.com";
 
-// ASUNTO
-$asunto = "Solicitud de cancelación de cita";
+// ASUNTO DEL CORREO
+$asunto = "Solicitud de cancelación de cita - Clínica Dental";
 
-// MENSAJE
-$contenido = "Nueva solicitud de cancelación de cita\n\n";
+// CONTENIDO DEL MENSAJE
+$contenido = "Se ha recibido una nueva solicitud de cancelación de cita.\n\n";
 $contenido .= "Nombre: $nombre\n";
 $contenido .= "Teléfono: $telefono\n";
 $contenido .= "Email: $email\n";
-$contenido .= "Fecha: $fecha\n";
-$contenido .= "Hora: $hora\n";
+$contenido .= "Fecha de la cita: $fecha\n";
+$contenido .= "Hora de la cita: $hora\n";
 $contenido .= "Motivo: $mensaje\n";
 
 // CABECERAS
-$cabeceras  = "From: no-reply@tu-dominio.com\r\n";
+$cabeceras  = "From: no-reply@clinicadrapajares.com\r\n";
 $cabeceras .= "Reply-To: $email\r\n";
 $cabeceras .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-// ENVIAR
-$enviado = mail($destino, $asunto, $contenido, $cabeceras);
-
-// RESPUESTA
-if ($enviado) {
-    echo "OK";
+// ENVÍO
+if (mail($destino, $asunto, $contenido, $cabeceras)) {
+    echo "Solicitud enviada correctamente.";
 } else {
     http_response_code(500);
     echo "Error al enviar la solicitud.";
